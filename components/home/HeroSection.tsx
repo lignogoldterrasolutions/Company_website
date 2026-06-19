@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-deep-navy">
+    <section className="relative min-h-screen flex items-center overflow-x-hidden bg-deep-navy">
       {/* Decorative rings */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
@@ -32,7 +32,7 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 py-20 w-full relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
 
           {/* Left: text + mobile stat cards + CTA — 3/5 on desktop */}
@@ -56,7 +56,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.15 }}
-              className="text-5xl md:text-6xl font-bold leading-tight mb-6 font-playfair text-white"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 font-playfair text-white"
             >
               Redesigning Wastewater Infrastructure into{' '}
               <span className="text-ligno-gold">Decentralized Resource Factories</span>

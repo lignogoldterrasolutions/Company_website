@@ -13,10 +13,10 @@ export default function PageHero({ eyebrow, title, subtitle, variant = 'dark' }:
   const isDark = variant === 'dark'
   return (
     <section
-      className="relative py-20 md:py-28"
+      className="relative py-16 md:py-28 overflow-x-hidden"
       style={{ background: isDark ? '#0C1A2E' : '#FAF7F0' }}
     >
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <motion.span
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ export default function PageHero({ eyebrow, title, subtitle, variant = 'dark' }:
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-4xl md:text-5xl font-bold leading-tight mt-1 mb-5 max-w-3xl"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mt-1 mb-5 max-w-3xl"
           style={{
             fontFamily: 'Playfair Display, serif',
             color: isDark ? '#fff' : '#1E3A5F',
@@ -41,7 +41,7 @@ export default function PageHero({ eyebrow, title, subtitle, variant = 'dark' }:
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg leading-relaxed max-w-2xl font-light"
+          className="text-base sm:text-lg leading-relaxed max-w-2xl font-light"
           style={{
             color: isDark ? 'rgba(255,255,255,0.6)' : 'rgba(30,58,95,0.7)',
             fontFamily: 'Inter, sans-serif',
