@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import SectionLabel from '@/components/ui/SectionLabel'
 import CTABanner from '@/components/home/CTABanner'
@@ -9,6 +10,7 @@ interface TeamMember {
   credentials: string
   badgeColor: string
   initial: string
+  image?: string
   points: string[]
 }
 interface StrategicReq {
@@ -37,22 +39,43 @@ export default function TeamContent({ team, requirements }: Props) {
                 transition={{ duration: 0.65, delay: i * 0.15 }}
                 className="rounded-3xl p-9 text-center bg-white border border-navy-text/10 hover:shadow-xl transition-shadow duration-300"
               >
+                {/* Avatar — photo if available, else initial */}
                 <motion.div
                   initial={{ scale: 0.8, opacity: 0 }}
                   whileInView={{ scale: 1, opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.15 + 0.2 }}
-                  className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-5 text-4xl font-bold font-playfair"
+                  className="mx-auto mb-5 flex-shrink-0"
                   style={{
-                    background: `${m.badgeColor}18`,
+                    width: 140,
+                    height: 140,
+                    borderRadius: '50%',
                     border: `3px solid ${m.badgeColor}`,
-                    color: m.badgeColor,
-                    width: 128,
-                    height: 128,
+                    overflow: 'hidden',
+                    boxShadow: `0 4px 20px ${m.badgeColor}30`,
+                    background: `${m.badgeColor}18`,
+                    position: 'relative',
                   }}
                 >
-                  {m.initial}
+                  {m.image ? (
+                    <Image
+                      src={m.image}
+                      alt={`${m.name} photo`}
+                      fill
+                      style={{ objectFit: 'cover', objectPosition: 'top center' }}
+                      sizes="140px"
+                      priority={i === 0}
+                    />
+                  ) : (
+                    <div
+                      className="w-full h-full flex items-center justify-center text-4xl font-bold font-playfair"
+                      style={{ color: m.badgeColor }}
+                    >
+                      {m.initial}
+                    </div>
+                  )}
                 </motion.div>
+
                 <h2 className="text-xl font-bold mb-2 font-playfair text-navy-text">{m.name}</h2>
                 <span
                   className="inline-block text-xs font-semibold px-3 py-1.5 rounded-full text-white mb-3 font-inter"

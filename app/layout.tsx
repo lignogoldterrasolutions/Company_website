@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   title: 'LignoGold Terra Solutions',
   description: 'Redesigning wastewater infrastructure into decentralized resource factories. Recovering N, P, K nutrients from urine and converting them into premium organo-mineral fertilizers.',
   keywords: 'nutrient recovery, struvite fertilizer, biochar, wastewater treatment, circular economy, India, MSME, sustainable agriculture',
+  icons: {
+    icon: '/logo.jpeg',
+    apple: '/logo.jpeg',
+    shortcut: '/logo.jpeg',
+  },
   openGraph: {
     title: 'LignoGold Terra Solutions',
     description: 'Turning wastewater into value — closing the nutrient loop between cities and farms.',

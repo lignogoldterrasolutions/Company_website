@@ -86,6 +86,7 @@ export const TEAM = [
     credentials: 'BSc IT Graduate',
     badgeColor: '#C89527',
     initial: 'M',
+    image: '/Founder.png',
     points: [
       'System thinker and Circular Economy Specialist',
       'Invented the core closed-loop sanitation architecture',
@@ -98,6 +99,7 @@ export const TEAM = [
     credentials: 'B.E Graduate',
     badgeColor: '#3A6B1A',
     initial: 'J',
+    image: '/Co-Founder.png',
     points: [
       'Sustainability and ESG professional specializing in environmental compliance',
       'Manages the technical on-ground installation operations, critical product structural design reviews, and engineering deployment safety',
