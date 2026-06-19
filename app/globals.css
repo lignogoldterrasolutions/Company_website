@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #1E3A5F;
+  --gold: #C89527;
+  --green: #3A6B1A;
+  --cream: #FAF7F0;
+  --dark: #0C1A2E;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #FAF7F0;
+  color: #1E3A5F;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #C89527;
+  display: block;
+  margin-bottom: 12px;
+}
