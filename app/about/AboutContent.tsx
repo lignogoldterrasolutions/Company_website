@@ -3,6 +3,7 @@ import SectionLabel from '@/components/ui/SectionLabel'
 import CTABanner from '@/components/home/CTABanner'
 import { motion } from 'framer-motion'
 import { ABOUT_PILLARS, BUSINESS_MODEL_CARDS } from '@/lib/constants'
+import GradientCard from '@/components/ui/GradientCard'
 
 interface TimelineStep {
   num: number
@@ -19,7 +20,7 @@ export default function AboutContent({ timeline }: Props) {
   return (
     <>
       {/* Story */}
-      <section className="py-20 bg-cream">
+      <section className="py-20 section-light-img">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -28,15 +29,15 @@ export default function AboutContent({ timeline }: Props) {
             transition={{ duration: 0.6 }}
           >
             <SectionLabel>Our Story</SectionLabel>
-            <h2 className="text-3xl font-bold mb-5 font-playfair text-navy-text">Who We Are</h2>
-            <p className="text-base leading-relaxed mb-4 text-navy-text/70 font-inter">
+            <h2 className="text-3xl font-bold mb-5 font-playfair text-dark-brown">Who We Are</h2>
+            <p className="text-base leading-relaxed mb-4 text-dark-brown/70 font-inter">
               LignoGold Terra Solutions is a deep-tech innovation team closing the loop between
               urban infrastructure and sustainable agriculture. We intercept wastewater assets at
               the source, transforming high-BOD/COD waste into high-value organo-mineral
               fertilizers — turning a costly disposal problem into a profitable resource recovery
               operation.
             </p>
-            <p className="text-base leading-relaxed text-navy-text/70 font-inter">
+            <p className="text-base leading-relaxed text-dark-brown/70 font-inter">
               Founded and MSME-registered in Chennai, Tamil Nadu, we are building India&apos;s
               first commercial-scale decentralized nutrient recovery infrastructure — one Ligno-Pod
               at a time.
@@ -48,13 +49,14 @@ export default function AboutContent({ timeline }: Props) {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="rounded-3xl p-9 bg-deep-navy"
           >
-            <p className="text-sm leading-relaxed mb-4 pl-4 border-l-2 border-ligno-gold text-white/60 font-inter italic">
-              &ldquo;Every toilet in India is flushing away a fortune in recoverable nutrients.
-              We&apos;re here to stop that.&rdquo;
-            </p>
-            <p className="text-xs text-white/35 font-inter">— Manjueesa Arumugam Yadav, Founder &amp; CEO</p>
+            <GradientCard className="p-9 text-dark-brown">
+              <p className="text-sm leading-relaxed mb-4 pl-4 border-l-2 border-ligno-gold text-dark-brown/70 font-inter italic">
+                &ldquo;Every toilet in India is flushing away a fortune in recoverable nutrients.
+                We&apos;re here to stop that.&rdquo;
+              </p>
+              <p className="text-xs text-dark-brown/40 font-inter">— Manjueesa Arumugam Yadav, Founder &amp; CEO</p>
+            </GradientCard>
           </motion.div>
         </div>
       </section>
@@ -63,7 +65,7 @@ export default function AboutContent({ timeline }: Props) {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <SectionLabel>Our Foundation</SectionLabel>
-          <h2 className="text-3xl font-bold mb-10 font-playfair text-navy-text">Three Pillars</h2>
+          <h2 className="text-3xl font-bold mb-10 font-playfair text-dark-brown">Three Pillars</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {ABOUT_PILLARS.map((p, i) => (
               <motion.div
@@ -72,12 +74,15 @@ export default function AboutContent({ timeline }: Props) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-100px' }}
                 transition={{ duration: 0.5, delay: i * 0.15 }}
-                className="rounded-2xl p-7 bg-cream border border-navy-text/10"
-                style={{ borderTop: `4px solid ${p.accent}` }}
               >
-                <div className="text-2xl mb-3">{p.icon}</div>
-                <h3 className="text-lg font-semibold mb-2 font-playfair text-navy-text">{p.title}</h3>
-                <p className="text-sm leading-relaxed text-navy-text/70 font-inter">{p.desc}</p>
+                <GradientCard
+                  className="h-full"
+                  style={{ borderTop: `4px solid ${p.accent}` }}
+                >
+                  <div className="text-2xl mb-3">{p.icon}</div>
+                  <h3 className="text-lg font-semibold mb-2 font-playfair text-dark-brown">{p.title}</h3>
+                  <p className="text-sm leading-relaxed text-dark-brown/70 font-inter">{p.desc}</p>
+                </GradientCard>
               </motion.div>
             ))}
           </div>
@@ -85,10 +90,10 @@ export default function AboutContent({ timeline }: Props) {
       </section>
 
       {/* Business Model — data sourced from constants.ts */}
-      <section className="py-20 bg-cream">
+      <section className="py-20 section-light-img">
         <div className="max-w-6xl mx-auto px-6">
           <SectionLabel>Business Model</SectionLabel>
-          <h2 className="text-3xl font-bold mb-10 font-playfair text-navy-text">Dual-Engine Revenue</h2>
+          <h2 className="text-3xl font-bold mb-10 font-playfair text-dark-brown">Dual-Engine Revenue</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             {BUSINESS_MODEL_CARDS.map((c, i) => (
               <motion.div
@@ -97,11 +102,12 @@ export default function AboutContent({ timeline }: Props) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-100px' }}
                 transition={{ duration: 0.6, delay: i * 0.2 }}
-                className="rounded-2xl p-7 bg-white border border-navy-text/10"
               >
-                <div className="text-2xl mb-3">{c.icon}</div>
-                <h3 className="text-base font-semibold mb-2 font-inter text-navy-text">{c.title}</h3>
-                <p className="text-sm leading-relaxed text-navy-text/70 font-inter">{c.desc}</p>
+                <GradientCard className="h-full">
+                  <div className="text-2xl mb-3">{c.icon}</div>
+                  <h3 className="text-base font-semibold mb-2 font-inter text-dark-brown">{c.title}</h3>
+                  <p className="text-sm leading-relaxed text-dark-brown/70 font-inter">{c.desc}</p>
+                </GradientCard>
               </motion.div>
             ))}
           </div>
@@ -110,17 +116,17 @@ export default function AboutContent({ timeline }: Props) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6 }}
-            className="rounded-xl p-5 text-sm leading-relaxed bg-ligno-gold/10 border border-ligno-gold/25 text-navy-text/75 font-inter"
+            className="rounded-xl p-5 text-sm leading-relaxed bg-ligno-gold/10 border border-ligno-gold/25 text-dark-brown/75 font-inter"
           >
             Recurring HaaS revenue funds operations while fertilizer sales create a high-margin
             secondary income stream — a{' '}
-            <strong className="text-navy-text">self-reinforcing circular economy model.</strong>
+            <strong className="text-dark-brown">self-reinforcing circular economy model.</strong>
           </motion.div>
         </div>
       </section>
 
       {/* MSME Trust banner */}
-      <section className="py-16 text-center bg-deep-navy">
+      <section className="py-16 text-center section-dark-img">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -141,10 +147,10 @@ export default function AboutContent({ timeline }: Props) {
       </section>
 
       {/* Roadmap timeline */}
-      <section className="py-20 bg-cream">
+      <section className="py-20 section-light-img">
         <div className="max-w-6xl mx-auto px-6">
           <SectionLabel>Our Journey</SectionLabel>
-          <h2 className="text-3xl font-bold mb-12 font-playfair text-navy-text">
+          <h2 className="text-3xl font-bold mb-12 font-playfair text-dark-brown">
             Path to Product-Market Fit
           </h2>
           <div className="relative">
@@ -181,8 +187,8 @@ export default function AboutContent({ timeline }: Props) {
                   <p className="text-xs font-bold tracking-widest uppercase mb-1 text-ligno-gold font-inter">
                     {t.phase}
                   </p>
-                  <h3 className="text-sm font-semibold mb-2 font-inter text-navy-text">{t.title}</h3>
-                  <p className="text-xs leading-relaxed text-navy-text/60 font-inter">{t.desc}</p>
+                  <h3 className="text-sm font-semibold mb-2 font-inter text-dark-brown">{t.title}</h3>
+                  <p className="text-xs leading-relaxed text-dark-brown/60 font-inter">{t.desc}</p>
                 </motion.div>
               ))}
             </div>

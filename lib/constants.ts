@@ -29,7 +29,7 @@ export const PROBLEMS = [
     icon: '🌾',
     title: 'Fertilizer Import Vulnerability',
     desc: "India's ₹2.3 Lakh Crore fertilizer market depends on volatile synthetic imports while soils suffer accelerating carbon depletion and degradation.",
-    accent: '#1E3A5F',
+    accent: '#5C3D11',
   },
   {
     icon: '⚗️',
@@ -55,14 +55,14 @@ export const SOLUTION_FEATURES = [
 export const PROCESS_STEPS = [
   { emoji: '🚰', num: 1, title: 'Interception', desc: 'Source-separated urine enters the modular Ligno-Pod via silicon odourless flap valve at the urinal outlet.', accent: '#C89527' },
   { emoji: '⚙️', num: 2, title: 'Ligno-Pod Processing', desc: 'Phosphorus crystallizes as struvite in the engineered matrix while N & K adsorb onto the biochar layer.', accent: '#3A6B1A' },
-  { emoji: '💰', num: 3, title: 'Dual Value Output', desc: 'Facilities gain scale-free pipes and 80% water savings. Saturated cores become premium fertilizer assets.', accent: '#1E3A5F' },
+  { emoji: '💰', num: 3, title: 'Dual Value Output', desc: 'Facilities gain scale-free pipes and 80% water savings. Saturated cores become premium fertilizer assets.', accent: '#5C3D11' },
   { emoji: '🌾', num: 4, title: 'Agri-Output', desc: 'Solar-dried, sanitized struvite-biochar fertilizer is sold to FPOs and distributors as premium slow-release input.', accent: '#3A6B1A' },
 ]
 
 export const MARKET_CARDS = [
   { tag: 'TAM', value: '₹2.3L Cr', desc: 'Total Fertilizers + Sanitation market in India', bg: 'rgba(200,149,39,0.12)', border: 'rgba(200,149,39,0.3)', tagColor: '#C89527' },
   { tag: 'SAM', value: '₹25,000 Cr', desc: 'Nutrient recovery and organic bio-inputs segment', bg: 'rgba(58,107,26,0.12)', border: 'rgba(58,107,26,0.3)', tagColor: '#6abf4b' },
-  { tag: 'SOM', value: '₹250–500 Cr', desc: '5-year B2B deployment across IT parks, malls, and industrial complexes', bg: 'rgba(30,58,95,0.15)', border: 'rgba(30,58,95,0.3)', tagColor: 'rgba(255,255,255,0.6)' },
+  { tag: 'SOM', value: '₹250–500 Cr', desc: '5-year B2B deployment across IT parks, malls, and industrial complexes', bg: 'rgba(92,61,17,0.15)', border: 'rgba(92,61,17,0.3)', tagColor: 'rgba(255,255,255,0.6)' },
 ]
 
 export const WHY_NOW = [
@@ -87,11 +87,7 @@ export const TEAM = [
     badgeColor: '#C89527',
     initial: 'M',
     image: '/Founder.png',
-    points: [
-      'System thinker and Circular Economy Specialist',
-      'Invented the core closed-loop sanitation architecture',
-      'Drives the end-to-end product engineering, cross-disciplinary laboratory networking, and commercial Hardware-as-a-Service (HaaS) deployment strategy',
-    ],
+    points: [],
   },
   {
     name: 'Jaiyendhran Alwar',
@@ -100,11 +96,7 @@ export const TEAM = [
     badgeColor: '#3A6B1A',
     initial: 'J',
     image: '/Co-Founder.png',
-    points: [
-      'Sustainability and ESG professional specializing in environmental compliance',
-      'Manages the technical on-ground installation operations, critical product structural design reviews, and engineering deployment safety',
-      'Authors and audits the automated ESG metrics dashboard to deliver verified data directly to commercial facility clients',
-    ],
+    points: [],
   },
 ]
 
@@ -140,7 +132,7 @@ export const PARTNERSHIP_TYPES = [
 export const IMPACT_PILLARS = [
   { icon: '💧', title: 'Water Conservation', stat: '80%', statLabel: 'reduction in flushing water demand', desc: 'Treated effluent is recirculated for flushing, dramatically reducing freshwater demand in commercial facilities across India.', color: '#3A6B1A' },
   { icon: '⚡', title: 'Energy Efficiency', stat: '80%', statLabel: 'of STP nitrogen load eliminated at source', desc: 'By removing 80% of the nitrogen load before it reaches the STP, aeration energy requirements drop significantly across the treatment system.', color: '#C89527' },
-  { icon: '🌲', title: 'Carbon Sequestration', stat: 'Permanent', statLabel: 'carbon storage via biochar matrix', desc: 'Biochar as the primary recovery matrix permanently sequesters carbon that would otherwise return to the atmosphere via decomposition.', color: '#1E3A5F' },
+  { icon: '🌲', title: 'Carbon Sequestration', stat: 'Permanent', statLabel: 'carbon storage via biochar matrix', desc: 'Biochar as the primary recovery matrix permanently sequesters carbon that would otherwise return to the atmosphere via decomposition.', color: '#5C3D11' },
   { icon: '🌱', title: 'Nutrient Recovery', stat: 'N · P · K', statLabel: 'all three macronutrients recovered', desc: 'N, P, and K recovered and returned to the soil as slow-release organic inputs — directly addressing India\'s fertilizer import dependence.', color: '#3A6B1A' },
 ]
 
@@ -165,7 +157,7 @@ export const ABOUT_PILLARS = [
     icon: '🌍',
     title: 'Impact',
     desc: 'Carbon sequestration, food security, and nutrient sovereignty — measured, verified, and delivered to our partners.',
-    accent: '#1E3A5F',
+    accent: '#5C3D11',
   },
 ]
 

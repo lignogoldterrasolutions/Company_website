@@ -16,8 +16,20 @@ function LinkedInIcon({ size = 14 }: { size?: number }) {
 
 export default function Footer() {
   return (
-    <footer style={{ background: '#0C1A2E' }} className="pt-12 pb-6">
-      <div className="max-w-6xl mx-auto px-6">
+    <footer
+      className="relative pt-12 pb-6 overflow-hidden"
+      style={{
+        backgroundImage: 'url(/section-bg.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center bottom',
+      }}
+    >
+      {/* Dark overlay */}
+      <div
+        className="absolute inset-0"
+        style={{ background: 'rgba(5,3,1,0.82)' }}
+      />
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
 
           {/* Brand */}
@@ -145,12 +157,21 @@ export default function Footer() {
           <p className="text-xs" style={{ color: 'rgba(255,255,255,0.3)', fontFamily: 'Inter, sans-serif' }}>
             © {new Date().getFullYear()} LignoGold Terra Solutions. All rights reserved. · Chennai, India
           </p>
-          <span
-            className="text-xs font-semibold px-3 py-1 rounded-full text-white tracking-wide"
-            style={{ background: '#3A6B1A' }}
-          >
-            MSME REGISTERED
-          </span>
+          <div className="flex items-center gap-3">
+            <Image
+              src="/MSME logo.jpeg"
+              alt="Government of India MSME Logo"
+              width={54}
+              height={27}
+              className="object-contain bg-white rounded p-0.5"
+            />
+            <span
+              className="text-xs font-semibold px-3 py-1 rounded-full text-white tracking-wide"
+              style={{ background: '#3A6B1A' }}
+            >
+              MSME REGISTERED
+            </span>
+          </div>
         </div>
       </div>
     </footer>

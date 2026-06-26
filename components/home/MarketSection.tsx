@@ -5,8 +5,21 @@ import { MARKET_CARDS, WHY_NOW } from '@/lib/constants'
 
 export default function MarketSection() {
   return (
-    <section className="py-20" style={{ background: '#0C1A2E' }}>
-      <div className="max-w-6xl mx-auto px-6">
+    <section
+      className="relative py-20 overflow-hidden"
+      style={{
+        backgroundImage: 'url(/section-bg.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}
+    >
+      {/* Dark overlay */}
+      <div
+        className="absolute inset-0"
+        style={{ background: 'linear-gradient(160deg, rgba(8,4,1,0.72) 0%, rgba(20,10,2,0.65) 100%)' }}
+      />
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
         <SectionLabel>Market Opportunity</SectionLabel>
         <motion.h2
           initial={{ opacity: 0, y: 24 }}

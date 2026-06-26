@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import ContactForm from './ContactForm'
+import GradientCard from '@/components/ui/GradientCard'
 
 interface ContactInfo {
   name: string
@@ -44,7 +45,7 @@ export default function ContactContent({ contactInfo, partnershipTypes }: Props)
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.65 }}
         >
-          <h3 className="text-xl font-semibold mb-6 font-playfair text-navy-text">Send Us a Message</h3>
+          <h3 className="text-xl font-semibold mb-6 font-playfair text-dark-brown">Send Us a Message</h3>
           <ContactForm />
         </motion.div>
 
@@ -56,7 +57,7 @@ export default function ContactContent({ contactInfo, partnershipTypes }: Props)
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.65, delay: 0.1 }}
         >
-          <h3 className="text-xl font-semibold mb-6 font-playfair text-navy-text">Direct Contact</h3>
+          <h3 className="text-xl font-semibold mb-6 font-playfair text-dark-brown">Direct Contact</h3>
           <div className="flex flex-col">
             {CONTACT_FIELDS(contactInfo).map((d, i) => (
               <motion.div
@@ -66,7 +67,7 @@ export default function ContactContent({ contactInfo, partnershipTypes }: Props)
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.2 + i * 0.07 }}
                 className="flex gap-4 items-start py-4"
-                style={{ borderBottom: '1px solid rgba(30,58,95,0.1)' }}
+                style={{ borderBottom: '1px solid rgba(44,26,6,0.1)' }}
               >
                 <div
                   className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 text-base"
@@ -75,7 +76,7 @@ export default function ContactContent({ contactInfo, partnershipTypes }: Props)
                   {d.icon}
                 </div>
                 <div>
-                  <p className="text-xs mb-0.5 text-navy-text/50 font-inter">{d.label}</p>
+                  <p className="text-xs mb-0.5 text-dark-brown/50 font-inter">{d.label}</p>
                   {d.link
                     ? <a
                         href={d.link}
@@ -85,7 +86,7 @@ export default function ContactContent({ contactInfo, partnershipTypes }: Props)
                       >
                         {d.value}
                       </a>
-                    : <p className="text-sm font-medium text-navy-text font-inter">{d.value}</p>
+                    : <p className="text-sm font-medium text-dark-brown font-inter">{d.value}</p>
                   }
                 </div>
               </motion.div>
@@ -93,7 +94,7 @@ export default function ContactContent({ contactInfo, partnershipTypes }: Props)
           </div>
 
           <div className="mt-7">
-            <h4 className="text-base font-semibold mb-4 font-inter text-navy-text">We&apos;re Looking For</h4>
+            <h4 className="text-base font-semibold mb-4 font-inter text-dark-brown">We&apos;re Looking For</h4>
             <div className="flex flex-col gap-3">
               {partnershipTypes.map((p, i) => (
                 <motion.div
@@ -102,10 +103,11 @@ export default function ContactContent({ contactInfo, partnershipTypes }: Props)
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: 0.5 + i * 0.1 }}
-                  className="rounded-xl p-4 bg-white border border-navy-text/10 hover:border-ligno-gold/30 transition-colors duration-300"
                 >
-                  <h5 className="text-sm font-semibold mb-1 font-inter text-navy-text">{p.icon} {p.label}</h5>
-                  <p className="text-xs leading-relaxed text-navy-text/60 font-inter">{p.desc}</p>
+                  <GradientCard className="p-4 rounded-xl">
+                    <h5 className="text-sm font-semibold mb-1 font-inter text-dark-brown">{p.icon} {p.label}</h5>
+                    <p className="text-xs leading-relaxed text-dark-brown/65 font-inter">{p.desc}</p>
+                  </GradientCard>
                 </motion.div>
               ))}
             </div>

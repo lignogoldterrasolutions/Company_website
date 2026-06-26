@@ -4,11 +4,11 @@ A professional Next.js 14 website for LignoGold Terra Solutions, an MSME-registe
 
 ## Tech Stack
 - **Framework**: Next.js 14 App Router
-- **Styling**: Tailwind CSS + inline styles
+- **Styling**: Tailwind CSS + Glassmorphism & Custom CSS Utilities
 - **Icons**: Lucide React
-- **Fonts**: Playfair Display + Inter (via Google Fonts CDN)
+- **Fonts**: Playfair Display + Inter (via Google Fonts)
 - **Contact Form**: Formspree
-- **Deployment**: Vercel
+- **Deployment**: Vercel — [Live App](https://lignogold-terra-solutions.vercel.app/)
 
 ## Brand Colors
 | Name        | Hex       | Usage                          |

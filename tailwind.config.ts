@@ -9,12 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'navy-text': '#1E3A5F',
+        'wood-brown': '#5C3D11',
+        'dark-brown': '#2C1A06',
         'ligno-gold': '#C89527',
         'earth-green': '#3A6B1A',
         'cream': '#FAF7F0',
-        'deep-navy': '#0C1A2E',
-        'mid-navy': '#152236',
       },
       fontFamily: {
         playfair: ['Playfair Display', 'serif'],

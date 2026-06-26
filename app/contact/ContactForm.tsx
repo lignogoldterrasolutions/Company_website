@@ -2,8 +2,8 @@
 import { useState } from 'react'
 
 const INPUT_CLASS =
-  'w-full px-3.5 py-2.5 border border-navy-text/15 rounded-lg text-sm text-navy-text bg-white outline-none ' +
-  'focus:border-ligno-gold focus:ring-2 focus:ring-ligno-gold/20 transition-all duration-200 font-inter placeholder:text-navy-text/35'
+  'w-full px-3.5 py-2.5 border border-dark-brown/15 rounded-lg text-sm text-dark-brown bg-white outline-none ' +
+  'focus:border-ligno-gold focus:ring-2 focus:ring-ligno-gold/20 transition-all duration-200 font-inter placeholder:text-dark-brown/35'
 
 function Spinner() {
   return (
@@ -51,11 +51,11 @@ function SuccessScreen({ onReset }: { onReset: () => void }) {
 
       <h3
         className="text-xl font-bold mb-2 font-inter"
-        style={{ color: '#1E3A5F' }}
+        style={{ color: '#2C1A06' }}
       >
         Message Sent Successfully!
       </h3>
-      <p className="text-sm leading-relaxed mb-1 font-inter" style={{ color: '#1E3A5F', opacity: 0.65 }}>
+      <p className="text-sm leading-relaxed mb-1 font-inter" style={{ color: '#2C1A06', opacity: 0.65 }}>
         Thank you for reaching out to LignoGold Terra Solutions.
       </p>
       <p className="text-sm font-semibold mb-6 font-inter" style={{ color: '#3A6B1A' }}>
@@ -66,12 +66,12 @@ function SuccessScreen({ onReset }: { onReset: () => void }) {
         onClick={onReset}
         className="text-sm font-medium px-5 py-2 rounded-lg transition-all duration-200 font-inter"
         style={{
-          border: '1px solid rgba(30,58,95,0.2)',
-          color: '#1E3A5F',
+          border: '1px solid rgba(44,26,6,0.2)',
+          color: '#2C1A06',
           background: 'white',
         }}
-        onMouseEnter={e => (e.currentTarget.style.background = '#1E3A5F', e.currentTarget.style.color = 'white')}
-        onMouseLeave={e => (e.currentTarget.style.background = 'white', e.currentTarget.style.color = '#1E3A5F')}
+        onMouseEnter={e => (e.currentTarget.style.background = '#2C1A06', e.currentTarget.style.color = 'white')}
+        onMouseLeave={e => (e.currentTarget.style.background = 'white', e.currentTarget.style.color = '#2C1A06')}
       >
         Send Another Message
       </button>
@@ -136,7 +136,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
       <div>
-        <label className="block text-sm font-medium mb-1.5 text-navy-text font-inter">Full Name *</label>
+        <label className="block text-sm font-medium mb-1.5 text-dark-brown font-inter">Full Name *</label>
         <input
           name="name"
           required
@@ -146,7 +146,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-medium mb-1.5 text-navy-text font-inter">Email Address *</label>
+        <label className="block text-sm font-medium mb-1.5 text-dark-brown font-inter">Email Address *</label>
         <input
           name="email"
           type="email"
@@ -157,7 +157,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-medium mb-1.5 text-navy-text font-inter">Organization / Company</label>
+        <label className="block text-sm font-medium mb-1.5 text-dark-brown font-inter">Organization / Company</label>
         <input
           name="organization"
           placeholder="Company name (optional)"
@@ -166,7 +166,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-medium mb-1.5 text-navy-text font-inter">Partnership Type</label>
+        <label className="block text-sm font-medium mb-1.5 text-dark-brown font-inter">Partnership Type</label>
         <select name="partnership_type" className={INPUT_CLASS + ' cursor-pointer'}>
           <option value="">Select a partnership type</option>
           {['B2B Facility Partner', 'B2G Urban Body', 'Agri Buyer', 'Incubator', 'Technical Mentor', 'Other'].map(o => (
@@ -176,7 +176,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-medium mb-1.5 text-navy-text font-inter">Message</label>
+        <label className="block text-sm font-medium mb-1.5 text-dark-brown font-inter">Message</label>
         <textarea
           name="message"
           rows={5}

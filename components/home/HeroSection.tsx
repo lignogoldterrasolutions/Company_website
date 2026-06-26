@@ -6,7 +6,23 @@ import { motion } from 'framer-motion'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-x-hidden bg-deep-navy">
+    <section
+      className="relative min-h-screen flex items-center overflow-x-hidden"
+      style={{
+        backgroundImage: 'url(/hero-bg.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center top',
+        backgroundAttachment: 'fixed',
+      }}
+    >
+      {/* Dark gradient overlay — light enough for image to show through */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            'linear-gradient(135deg, rgba(10,5,1,0.65) 0%, rgba(30,15,3,0.55) 40%, rgba(10,5,1,0.45) 100%)',
+        }}
+      />
       {/* Decorative rings */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div

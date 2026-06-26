@@ -26,13 +26,13 @@ const sizeMap: Record<Size, string> = {
  */
 const variantMap: Record<Variant, string> = {
   primary:
-    'bg-ligno-gold text-white border border-transparent hover:bg-deep-navy hover:border-deep-navy',
+    'bg-ligno-gold text-white border border-transparent hover:bg-dark-brown hover:border-dark-brown',
   outline:
     'bg-transparent text-ligno-gold border border-ligno-gold hover:bg-ligno-gold hover:text-white',
   'outline-white':
     'bg-transparent text-white border border-white/50 hover:bg-white/10 hover:border-white/70',
   ghost:
-    'bg-transparent text-navy-text border border-transparent hover:text-ligno-gold',
+    'bg-transparent text-dark-brown border border-transparent hover:text-ligno-gold',
 }
 
 export default function Button({

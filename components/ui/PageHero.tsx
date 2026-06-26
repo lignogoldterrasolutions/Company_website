@@ -14,9 +14,27 @@ export default function PageHero({ eyebrow, title, subtitle, variant = 'dark' }:
   return (
     <section
       className="relative py-16 md:py-28 overflow-x-hidden"
-      style={{ background: isDark ? '#0C1A2E' : '#FAF7F0' }}
+      style={
+        isDark
+          ? {
+              backgroundImage: 'url(/hero-bg.png)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center center',
+              backgroundAttachment: 'fixed',
+            }
+          : { background: '#FAF7F0' }
+      }
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      {isDark && (
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+            'linear-gradient(160deg, rgba(8,4,1,0.65) 0%, rgba(25,12,2,0.60) 60%, rgba(8,4,1,0.55) 100%)',
+          }}
+        />
+      )}
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
         <motion.span
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,7 +50,7 @@ export default function PageHero({ eyebrow, title, subtitle, variant = 'dark' }:
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mt-1 mb-5 max-w-3xl"
           style={{
             fontFamily: 'Playfair Display, serif',
-            color: isDark ? '#fff' : '#1E3A5F',
+            color: isDark ? '#fff' : '#2C1A06',
           }}
         >
           {title}
@@ -43,7 +61,7 @@ export default function PageHero({ eyebrow, title, subtitle, variant = 'dark' }:
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-base sm:text-lg leading-relaxed max-w-2xl font-light"
           style={{
-            color: isDark ? 'rgba(255,255,255,0.6)' : 'rgba(30,58,95,0.7)',
+            color: isDark ? 'rgba(255,255,255,0.6)' : 'rgba(44,26,6,0.7)',
             fontFamily: 'Inter, sans-serif',
           }}
         >
@@ -56,7 +74,7 @@ export default function PageHero({ eyebrow, title, subtitle, variant = 'dark' }:
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8, duration: 0.5 }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 z-10"
       >
         <motion.div
           animate={{ y: [0, 6, 0] }}
@@ -64,7 +82,7 @@ export default function PageHero({ eyebrow, title, subtitle, variant = 'dark' }:
         >
           <ChevronDown
             size={22}
-            style={{ color: isDark ? 'rgba(255,255,255,0.3)' : 'rgba(30,58,95,0.25)' }}
+            style={{ color: isDark ? 'rgba(255,255,255,0.3)' : 'rgba(44,26,6,0.25)' }}
           />
         </motion.div>
       </motion.div>

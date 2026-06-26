@@ -17,6 +17,14 @@ export const metadata: Metadata = {
     description: 'Turning wastewater into value — closing the nutrient loop between cities and farms.',
     url: 'https://lignogold.in',
     siteName: 'LignoGold Terra Solutions',
+    images: [
+      {
+        url: '/logo.jpeg',
+        width: 800,
+        height: 800,
+        alt: 'LignoGold Terra Solutions Logo',
+      },
+    ],
   },
 }
 
@@ -29,16 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"
           rel="stylesheet"
-          media="print"
-          // @ts-ignore
-          onLoad="this.media='all'"
         />
-        <noscript>
-          <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"
-            rel="stylesheet"
-          />
-        </noscript>
       </head>
       <body>
         <Navbar />

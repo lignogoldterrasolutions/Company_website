@@ -3,25 +3,67 @@
 @tailwind utilities;
 
 :root {
-  --navy: #1E3A5F;
+  --wood-brown: #5C3D11;
+  --dark-brown: #2C1A06;
   --gold: #C89527;
   --green: #3A6B1A;
   --cream: #FAF7F0;
-  --dark: #0C1A2E;
 }
 
 html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
   overflow-x: hidden;
-  background-color: #FAF7F0;
-  color: #1E3A5F;
+  /* Light farmland image as global page background */
+  background-image: url('/light-bg.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  color: #1a0e03;
   font-family: 'Inter', system-ui, sans-serif;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Playfair Display', Georgia, serif;
 }
+
+/* ── Section background helpers ───────────────────────── */
+/* Dark: hero/CTA/footer sections — image visible through overlay  */
+.section-dark-img {
+  position: relative;
+  background-image: url('/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.section-dark-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(10,5,1,0.70) 0%, rgba(30,15,3,0.65) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+.section-dark-img > * { position: relative; z-index: 1; }
+
+/* Light: content sections — soft warm overlay so text reads clearly */
+.section-light-img {
+  position: relative;
+  background-image: url('/light-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.section-light-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 252, 245, 0.62);
+  pointer-events: none;
+  z-index: 0;
+}
+.section-light-img > * { position: relative; z-index: 1; }
+/* ────────────────────────────────────────────────────── */
 
 .section-label {
   font-size: 11px;

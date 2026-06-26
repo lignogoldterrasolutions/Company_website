@@ -5,7 +5,7 @@ import { SDG_GOALS } from '@/lib/constants'
 
 export default function SDGSection() {
   return (
-    <section className="py-20 bg-cream">
+    <section className="py-20 section-light-img">
       <div className="max-w-6xl mx-auto px-6">
         <SectionLabel>Global Alignment</SectionLabel>
         <motion.h2
@@ -13,7 +13,7 @@ export default function SDGSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-bold mb-10 font-playfair text-navy-text"
+          className="text-4xl font-bold mb-10 font-playfair text-dark-brown"
         >
           Contributing to 5 UN Sustainable Development Goals
         </motion.h2>
