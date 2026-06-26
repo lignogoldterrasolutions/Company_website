@@ -4,6 +4,7 @@ import CTABanner from '@/components/home/CTABanner'
 import { motion } from 'framer-motion'
 import { ABOUT_PILLARS, BUSINESS_MODEL_CARDS } from '@/lib/constants'
 import GradientCard from '@/components/ui/GradientCard'
+import Image from 'next/image'
 
 interface TimelineStep {
   num: number
@@ -132,8 +133,17 @@ export default function AboutContent({ timeline }: Props) {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-6xl mx-auto px-6"
+          className="max-w-6xl mx-auto px-6 flex flex-col items-center"
         >
+          <div className="mb-4">
+            <Image
+              src="/MSME logo.jpeg"
+              alt="Government of India MSME Logo"
+              width={100}
+              height={50}
+              className="object-contain bg-white rounded p-1 mx-auto"
+            />
+          </div>
           <span className="inline-block text-xs font-bold px-4 py-2 rounded-full text-white mb-5 tracking-widest bg-earth-green">
             MSME REGISTERED
           </span>
