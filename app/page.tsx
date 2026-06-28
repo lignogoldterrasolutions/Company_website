@@ -16,8 +16,8 @@ export default function HomePage() {
         <Image
           src="/MSME logo.jpeg"
           alt="Government of India MSME Logo"
-          width={40}
-          height={20}
+          width={32}
+          height={16}
           className="object-contain bg-white rounded p-0.5 flex-shrink-0"
         />
         <span>MSME Registered Company &nbsp;·&nbsp; Closing the nutrient loop between cities and farms &nbsp;·&nbsp; Chennai, India</span>

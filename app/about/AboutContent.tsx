@@ -139,8 +139,8 @@ export default function AboutContent({ timeline }: Props) {
             <Image
               src="/MSME logo.jpeg"
               alt="Government of India MSME Logo"
-              width={100}
-              height={50}
+              width={64}
+              height={32}
               className="object-contain bg-white rounded p-1 mx-auto"
             />
           </div>

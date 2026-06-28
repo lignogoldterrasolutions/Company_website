@@ -161,8 +161,8 @@ export default function Footer() {
             <Image
               src="/MSME logo.jpeg"
               alt="Government of India MSME Logo"
-              width={54}
-              height={27}
+              width={40}
+              height={20}
               className="object-contain bg-white rounded p-0.5"
             />
             <span
