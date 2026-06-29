@@ -53,8 +53,7 @@ export default function AboutContent({ timeline }: Props) {
           >
             <GradientCard className="p-9 text-dark-brown">
               <p className="text-sm leading-relaxed mb-4 pl-4 border-l-2 border-ligno-gold text-dark-brown/70 font-inter italic">
-                &ldquo;Every toilet in India is flushing away a fortune in recoverable nutrients.
-                We&apos;re here to stop that.&rdquo;
+                &ldquo;The future of sanitation isn&apos;t treating waste&mdash;it&apos;s recovering value before it becomes waste.&rdquo;
               </p>
               <p className="text-xs text-dark-brown/40 font-inter">— Manjueesa Arumugam Yadav, Founder &amp; CEO</p>
             </GradientCard>
