@@ -57,22 +57,6 @@ export default function Footer() {
               Redesigning wastewater infrastructure into decentralized resource factories.
               Closing the nutrient loop between cities and farms.
             </p>
-            {/* LinkedIn — critical for B2B investor visibility */}
-            <a
-              href="https://linkedin.com/company/lignogold-terra-solutions"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-lg
-                         transition-colors duration-200 hover:text-ligno-gold hover:border-ligno-gold/40"
-              style={{
-                color: 'rgba(255,255,255,0.55)',
-                border: '1px solid rgba(255,255,255,0.15)',
-                fontFamily: 'Inter, sans-serif',
-              }}
-            >
-              <LinkedInIcon size={13} />
-              LinkedIn
-            </a>
           </div>
 
           {/* Nav */}
