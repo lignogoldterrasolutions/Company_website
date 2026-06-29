@@ -135,13 +135,13 @@ export default function AboutContent({ timeline }: Props) {
           transition={{ duration: 0.6 }}
           className="max-w-6xl mx-auto px-6 flex flex-col items-center"
         >
-          <div className="mb-4">
+          <div className="mb-3">
             <Image
               src="/MSME logo.jpeg"
               alt="Government of India MSME Logo"
-              width={64}
-              height={32}
-              className="object-contain bg-white rounded p-1 mx-auto"
+              width={48}
+              height={24}
+              className="object-contain bg-white rounded p-0.5 mx-auto"
             />
           </div>
           <span className="inline-block text-xs font-bold px-4 py-2 rounded-full text-white mb-5 tracking-widest bg-earth-green">

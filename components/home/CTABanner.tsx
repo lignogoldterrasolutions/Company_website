@@ -48,13 +48,10 @@ export default function CTABanner() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.55, delay: 0.25 }}
-          className="flex flex-wrap gap-4 justify-center"
+          className="flex justify-center"
         >
           <Link href="/contact">
             <Button variant="primary" size="lg">Partner With Us</Button>
-          </Link>
-          <Link href="/technology">
-            <Button variant="outline-white" size="lg">Learn Our Technology</Button>
           </Link>
         </motion.div>
       </div>

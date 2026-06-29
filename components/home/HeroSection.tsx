@@ -117,8 +117,7 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 0.45 }}
               className="flex flex-wrap gap-4"
             >
-              <Link href="/technology"><Button variant="primary" size="lg">Explore Our Technology</Button></Link>
-              <Link href="/contact"><Button variant="outline-white" size="lg">Partner With Us</Button></Link>
+              <Link href="/contact"><Button variant="primary" size="lg">Partner With Us</Button></Link>
             </motion.div>
           </div>
 
