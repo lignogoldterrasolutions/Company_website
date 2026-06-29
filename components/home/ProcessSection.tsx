@@ -13,17 +13,9 @@ export default function ProcessSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-bold mb-3 font-playfair text-dark-brown">
+          className="text-4xl font-bold mb-12 font-playfair text-dark-brown text-center md:text-left">
           The Four-Step Ligno-Pod Process
         </motion.h2>
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.6, delay: 0.15 }}
-          className="text-base mb-16 max-w-xl text-dark-brown/60 font-inter">
-          A continuous-flow system with zero batch processing and zero manual intervention.
-        </motion.p>
         <div className="relative">
           {/* Connecting line */}
           <motion.div 
@@ -50,8 +42,7 @@ export default function ProcessSection() {
                   <span className="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full text-xs font-bold flex items-center justify-center text-white"
                     style={{ background: s.accent, fontSize: 10 }}>{s.num}</span>
                 </div>
-                <h3 className="text-sm font-semibold mb-2 font-inter text-dark-brown">{s.title}</h3>
-                <p className="text-xs leading-relaxed text-dark-brown/65 font-inter">{s.desc}</p>
+                <h3 className="text-base font-semibold mb-2 font-inter text-dark-brown">{s.title}</h3>
               </motion.div>
             ))}
           </div>
