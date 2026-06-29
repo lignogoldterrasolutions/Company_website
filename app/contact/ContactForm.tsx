@@ -202,8 +202,8 @@ export default function ContactForm() {
             <p className="font-semibold mb-0.5">Something went wrong</p>
             <p className="opacity-80">
               {errorMsg}{' '}
-              <a href="mailto:manjueesa@gmail.com" className="underline font-medium">
-                manjueesa@gmail.com
+              <a href="mailto:lignogoldterrasolutions@gmail.com" className="underline font-medium">
+                lignogoldterrasolutions@gmail.com
               </a>
             </p>
           </div>

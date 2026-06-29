@@ -197,8 +197,7 @@ export default function AboutContent({ timeline }: Props) {
                   <p className="text-xs font-bold tracking-widest uppercase mb-1 text-ligno-gold font-inter">
                     {t.phase}
                   </p>
-                  <h3 className="text-sm font-semibold mb-2 font-inter text-dark-brown">{t.title}</h3>
-                  <p className="text-xs leading-relaxed text-dark-brown/60 font-inter">{t.desc}</p>
+                  <h3 className="text-sm font-semibold font-inter text-dark-brown">{t.title}</h3>
                 </motion.div>
               ))}
             </div>

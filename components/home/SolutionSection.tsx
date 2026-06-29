@@ -58,7 +58,7 @@ export default function SolutionSection() {
           >
             <SectionLabel>Our Solution</SectionLabel>
             <h2 className="text-4xl font-bold mb-4 font-playfair text-dark-brown">
-              The Ligno-Pod: In-Situ Nutrient Recovery
+              💎 The Ligno-Pod: In-Situ Nutrient Recovery
             </h2>
             <p className="text-base leading-relaxed mb-6 text-dark-brown/70 font-inter">
               A modular, odorless biomineralization system that intercepts and recovers nutrients

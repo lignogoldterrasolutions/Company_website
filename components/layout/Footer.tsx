@@ -128,13 +128,6 @@ export default function Footer() {
               >
                 {CONTACT_INFO.email}
               </a>
-              <a
-                href={`tel:${CONTACT_INFO.phone.replace(/\s/g, '')}`}
-                className="no-underline transition-colors duration-200 block hover:text-ligno-gold"
-                style={{ color: 'rgba(255,255,255,0.5)' }}
-              >
-                {CONTACT_INFO.phone}
-              </a>
               {/* Location links to Google Maps */}
               <a
                 href="https://maps.google.com/?q=Chennai,Tamil+Nadu,India"

@@ -1,7 +1,6 @@
 export const NAV_LINKS = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about' },
-  { label: 'Technology', href: '/technology' },
   { label: 'Impact', href: '/impact' },
   { label: 'Team', href: '/team' },
 ]
@@ -53,7 +52,7 @@ export const SOLUTION_FEATURES = [
 ]
 
 export const PROCESS_STEPS = [
-  { emoji: '🚰', num: 1, title: 'Interception', desc: 'Source-separated urine enters the modular Ligno-Pod via silicon odourless flap valve at the urinal outlet.', accent: '#C89527' },
+  { emoji: '⚙️', num: 1, title: 'Interception', desc: 'Source-separated urine enters the modular Ligno-Pod via silicon odourless flap valve at the urinal outlet.', accent: '#C89527' },
   { emoji: '⚙️', num: 2, title: 'Ligno-Pod Processing', desc: 'Phosphorus crystallizes as struvite in the engineered matrix while N & K adsorb onto the biochar layer.', accent: '#3A6B1A' },
   { emoji: '💰', num: 3, title: 'Dual Value Output', desc: 'Facilities gain scale-free pipes and 80% water savings. Saturated cores become premium fertilizer assets.', accent: '#5C3D11' },
   { emoji: '🌾', num: 4, title: 'Agri-Output', desc: 'Solar-dried, sanitized struvite-biochar fertilizer is sold to FPOs and distributors as premium slow-release input.', accent: '#3A6B1A' },
@@ -83,7 +82,7 @@ export const TEAM = [
   {
     name: 'Manjueesa Arumugam Yadav',
     role: 'Founder & Chief Executive Officer (CEO)',
-    credentials: 'BSc IT Graduate',
+    credentials: '',
     badgeColor: '#C89527',
     initial: 'M',
     image: '/Founder.png',
@@ -92,7 +91,7 @@ export const TEAM = [
   {
     name: 'Jaiyendhran Alwar',
     role: 'Co-Founder & Chief Sustainability Officer (CSO)',
-    credentials: 'B.E Graduate',
+    credentials: '',
     badgeColor: '#3A6B1A',
     initial: 'J',
     image: '/Co-Founder.png',
@@ -118,8 +117,8 @@ export const TIMELINE = [
 export const CONTACT_INFO = {
   name: 'Manjueesa Arumugam Yadav',
   role: 'Founder & CEO, LignoGold Terra Solutions',
-  email: 'manjueesa@gmail.com',
-  phone: '+91 73588 64812',
+  email: 'lignogoldterrasolutions@gmail.com',
+  phone: '',
   location: 'Chennai, Tamil Nadu, India',
 }
 

@@ -84,7 +84,9 @@ export default function TeamContent({ team, requirements }: Props) {
                   >
                     {m.role}
                   </span>
-                  <p className="text-xs mb-5 text-dark-brown/50 font-inter">{m.credentials}</p>
+                  {m.credentials && (
+                    <p className="text-xs mb-5 text-dark-brown/50 font-inter">{m.credentials}</p>
+                  )}
                   {m.points.length > 0 && (
                     <ul className="text-left flex flex-col gap-3 list-none">
                       {m.points.map((pt, j) => (

@@ -24,7 +24,6 @@ const CONTACT_FIELDS = (info: ContactInfo) => [
   { icon: '👤', label: 'Name', value: info.name, link: null },
   { icon: '💼', label: 'Role', value: info.role, link: null },
   { icon: '📧', label: 'Email', value: info.email, link: `mailto:${info.email}` },
-  { icon: '📞', label: 'Phone', value: info.phone, link: `tel:${info.phone.replace(/\s/g, '')}` },
   {
     icon: '📍',
     label: 'Location',
