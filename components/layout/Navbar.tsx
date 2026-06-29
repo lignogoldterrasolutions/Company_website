@@ -37,8 +37,10 @@ export default function Navbar() {
             className="object-contain rounded-md shadow-sm"
           />
           <div>
-            <span className="block font-bold text-base leading-tight" style={{ fontFamily: 'Playfair Display, serif', color: '#2C1A06' }}>LignoGold</span>
-            <span className="block text-xs font-semibold leading-tight" style={{ fontFamily: 'Playfair Display, serif', color: '#3A6B1A' }}>Terra Solutions</span>
+            <span className="block font-bold text-base leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
+              <span style={{ color: '#5C3A1E' }}>Ligno</span><span style={{ color: '#C8961A' }}>Gold</span>
+            </span>
+            <span className="block text-xs font-semibold leading-tight" style={{ fontFamily: 'Playfair Display, serif', color: '#4A6B1A' }}>Terra Solutions</span>
           </div>
         </Link>
 
